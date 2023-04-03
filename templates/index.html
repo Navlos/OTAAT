@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One thought At a TIme</title>
+    <link rel="stylesheet" href="{% static  'css/index.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>One Thought At A Time</h2>
+            <p class = fade>The post here are a replica of my thoughts at certain times, I hope you somehow gain strength from them.</p>
+        
+        </div>
+
+       
+    </div>
+
+    <main>
+       
+
+        <div class="Recently_posted">
+            <div class="posts">
+                  {% for post in posts reversed %}
+                  <div class="card">
+                   
+                    <h2>{{post.title}}</h2>
+                      <p>{{post.content|truncatewords:20 }}</p>
+                      <p class='fade'>{{post.date}}</p>   <a
+                      href="/post/ {{post.id}} "
+                    >
+                      Read more
+                    </a>
+                  </div>
+                  {%endfor %}
+                
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

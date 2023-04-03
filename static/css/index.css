@@ -1,0 +1,131 @@
+@import url('http://fonts.cdnfonts.com/css/cs-harley');
+@import url('https://fonts.cdnfonts.com/css/sofia-pro');
+@import url('https://fonts.cdnfonts.com/css/hubot-sans');
+
+* {
+  box-sizing: border-box;
+
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 2em;
+
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  font-family: 'Hubot-Sans', sans-serif;
+
+
+
+
+
+
+}
+
+.container {
+  width: 98%;
+  margin: auto;
+}
+
+.header {
+  padding: 1em;
+  text-align: center;
+  background: black;
+  line-height: 1em;
+  color: #f1f1f1;
+
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-family: 'CS Harley', sans-serif;
+  text-transform: uppercase;
+}
+
+main {
+  width: 96%;
+  margin: auto;
+  
+}
+
+.card {
+  /* background-color: #f1f1f1; */
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card h2 {
+  text-transform: uppercase;
+}
+
+.card a {
+  text-decoration: none;
+  color: #f1f1f1;
+  background-color: black;
+  padding: .5em 1em;
+}
+
+.fade {
+  opacity: .8;
+}
+
+@media screen and (max-width: 800px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .header h2 {
+    font-size: 90%;
+
+  }
+
+  .header p {
+    letter-spacing: .5px;
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .post_date {
+    text-align: left;
+    opacity: .8;
+    font-size: 10px;
+  }
+
+  .post_content {
+    width: 98%;
+    margin: auto;
+  }
+
+  .title {
+    width: 80%;
+    margin-top:3em;
+  }
+
+  .post_title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .title p {
+    text-transform: capitalize;
+  }
+
+  img{
+    width:90%;
+    margin:auto;
+    height:3%;
+  }
+}
+
+
+
+/* post page */

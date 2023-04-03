@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTAAT Thought #{{post.id}}</title>
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+  <div class="container">
+    {% comment %} <div class="header">
+        <h2 class = 'fade'>One Thought At A Time</h2>
+         
+    
+    </div> {% endcomment %}
+   <main>
+
+    {% comment %} <a href="{% url 'home' %}">Click here to Read more posts like this</a> {% endcomment %}
+   
+      <div class="title">
+        <p class= "post_title">{{post.title}}</p>
+      </div>
+      <p class="post_date">{{post.date}}</p>
+      {% if post.post_image %}
+      <img src="{{post.post_image.url}}" alt="{{post.image_caption}}">
+      <p>{{post.image_caption}}</p>
+      {% endif %}
+        
+        
+      
+      <p class="post_content">{{post.content}}</p>
+      
+    
+   </main>
+   
+</div>
+</body>
+</html>
